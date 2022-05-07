@@ -1,134 +1,27 @@
-# EternalNFT
+# Next.js + Tailwind CSS Example
 
-## Table of Contents
-  - [Deployed Website url](#deployed-website-url)
-  - [Deployed Contract Address](#deployed-contract-address)
-  - [Project Description](#project-description)
-  - [Workflow](#workflow)
-  - [Directory structure](#directory-structure)
-  - [Clone, Install and Build steps](#clone-install-and-build-steps)
-    - [Prerequisites](#prerequisites)
-    - [Cloning and installing dependencies](#cloning-and-installing-dependencies)
-    - [Testing Contracts](#testing-contracts)
-    - [Running the frontend](#running-the-frontend)
+This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
 
-## Deployed Website url
+## Preview
 
-https://eternal-nft.vercel.app/
+Preview the example live on [StackBlitz](http://stackblitz.com/):
 
-## Deployed Contract Address
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
 
-0x9b6dd9b898c300037c8C245e8E619a0934158065
+## Deploy your own
 
-## Project Description
+Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
 
-A dapp to mint your own text-based **Eternal Character NFT**.
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
 
-**Eternal Characters** are the residents of **Eternal Domain world**. They consist of 3 main characteristics, Area of Control, Weapon and Rank.
+## How to use
 
-**Area of Control -** Fire, Wind, Wave, Earth, Light, Shadow, Thunder, Space, Time, Gravity, Ice
-**Weapon -** Sword, Spear, Shield, Hammer, Saber, Axe, Bow, Staff, Wand, Fist, Dagger, Scythe, Mace, Blade, Katana
-**Rank -** Lord, King, Emperor, Venerable, Ancestor, Saint, God
+Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
 
-## Workflow
-
-1. Enter the dApp and connect the wallet to rinkeby network.
-2. Click on the Mint Character button.
-3. Metamask pops up and asks to confirm the transaction.
-4. After the transaction is successfully processed the user can see the minted character.
-5. The minted character is also added to My NFT page under Minted Characters section.
-
-## Directory structure
-
-```
-EternalNFT
-┣ client
-┃ ┣ pages
-┃ ┃ ┣ api
-┃ ┃ ┃ ┗ hello.js
-┃ ┃ ┣ \_app.js
-┃ ┃ ┗ index.js
-┃ ┣ public
-┃ ┃ ┣ favicon.ico
-┃ ┃ ┗ vercel.svg
-┃ ┣ styles
-┃ ┃ ┗ globals.css
-┃ ┣ utils
-┃ ┃ ┗ EternalNFT.json
-┃ ┣ .gitignore
-┃ ┣ README.md
-┃ ┣ config.js
-┃ ┣ package-lock.json
-┃ ┣ package.json
-┃ ┣ postcss.config.js
-┃ ┗ tailwind.config.js
-┣ contracts
-┃ ┣ libraries
-┃ ┃ ┗ Base64.sol
-┃ ┗ EternalNFT.sol
-┣ scripts
-┃ ┗ deploy.js
-┣ test
-┃ ┗ eternalTest.js
-┣ .gitignore
-┣ README.md
-┣ hardhat.config.js
-┣ package-lock.json
-┗ package.json
+```bash
+npx create-next-app --example with-tailwindcss with-tailwindcss-app
+# or
+yarn create next-app --example with-tailwindcss with-tailwindcss-app
 ```
 
-## Clone, Install and Build steps
-
-### Prerequisites
-
-1. [Git](https://git-scm.com/)
-2. [Node JS](https://nodejs.org/en/) (everything was installed and tested under v15.12.0)
-3. A Browser with the [MetaMask extension](https://metamask.io/) installed.
-4. Test Ether on the Rinkeby network.
-
-<br>
-
-### Cloning and installing dependencies
-
-1. Clone the project repository on your local machine
-
-```
- git clone https://github.com/AbhinavXT/EternalNFT.git
- cd EternalNFT
-```
-
-2. Installing dependencies
-
-- For contracts -
-  ```
-  npm install
-  ```
-- For client -
-  ```
-  cd client
-  npm install
-  ```
-
-### Testing Contracts
-
-For testing contracts run command:
-
-```
-npx hardhat test
-```
-
-### Running the frontend
-
-For running frontend locally run command:
-
-```
-cd client
-npm run dev
-```
-
-### Environment variables (not needed for running project locally)
-
-```
-ALCHEMY_RINKEBY_URL =
-ACCOUNT_KEY =
-```
+Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
